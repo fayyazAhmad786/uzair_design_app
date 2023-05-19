@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sync"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:orderInCategory="3"
+        android:title="Sync"
+        app:showAsAction="always" />
+<!--  <item-->
+<!--      android:id="@+id/updateapp"-->
+<!--      android:title="Update App"-->
+<!--      app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/number"
+        android:title="View Registered#"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>

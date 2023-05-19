@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/splashLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.30" />
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/image1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="70dp"-->
+        <!--            android:src="@drawable/dots_loading" />-->
+
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/punjablogo"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading ..."
+            android:layout_weight="0.10"
+            android:textStyle="bold"
+            android:textColor="#FFF"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/app_name"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:textSize="20sp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By Urban Unit"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/avLoadingSplash"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/AVLoadingIndicatorView.Small"-->
+        <!--android:visibility="visible"-->
+        <!--app:indicatorName="BallPulseIndicator"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</LinearLayout>

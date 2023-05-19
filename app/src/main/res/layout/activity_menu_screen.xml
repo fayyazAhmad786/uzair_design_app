@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuScreen">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave"
+                android:backgroundTint="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imagelogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kplogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/tvGovTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/gov_title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imagelogo"
+                app:layout_constraintHorizontal_bias="0.600"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGovsubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/govsub_title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/imagelogo"
+                app:layout_constraintHorizontal_bias="0.606"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/tvGovTitle" />
+
+            <Button
+                android:id="@+id/btnStartSurvey"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:onClick="btnsurveyform"
+                android:padding="10dp"
+                android:text="Survey Form"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:drawableTop="@drawable/ic_baseline_edit_note_24"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toStartOf="@+id/btnPending"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGovsubTitle" />
+
+            <Button
+                android:id="@+id/btnPending"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:onClick="btnPending"
+                android:padding="10dp"
+                android:text="Pending Records"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:drawableTop="@drawable/ic_baseline_book_online_24"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnStartSurvey"
+                app:layout_constraintTop_toBottomOf="@+id/tvGovsubTitle" />
+
+            <Button
+                android:id="@+id/btnOutBox"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="btnOutbox"
+                android:padding="10dp"
+                android:text="View Sent Records"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:drawableTop="@drawable/ic_baseline_bookmark_added_24"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toStartOf="@+id/btnMaps"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnStartSurvey" />
+
+            <Button
+                android:id="@+id/btnMaps"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="MapsFunc"
+                android:padding="10dp"
+                android:text="Map"
+                android:drawableTop="@drawable/ic_baseline_map_24"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnOutBox"
+                app:layout_constraintTop_toBottomOf="@+id/btnPending" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Land Use Survey</string>
+    <string name="ent_title">EXCISE, TAXATION &amp;\nNARCOTICS DEPARTMENT</string>
+    <string name="gov_title">GOVERNMENT OF\nTHE KPK</string>
+    <string name="govsub_title">Here the user can submit the\nsurvey form, view the status\nof the form and also access\nthe map.</string>
+
+    <!--    <string name="images_folder">Land Use Survey v1.0/images</string>-->
+
+    <string name="images_folder">Land Use Survey App v1.0/images</string>
+
+    <string name="version">1.0</string>
+    <!--    <string name="db_name">Land Use Survey App v1.0/database</string>-->
+
+    <string name="db_name">Land Use Survey App v1.0/database</string>
+
+    <string name="disclaimer">Disclaimer: The contents of this mobile app are for information of public only and have no legal validity. Information of this mobile app is renewed and corrected periodically and may change without notice.</string>
+    <string name="no_gps">Your Mobile do not have GPS sensor, Please change the mobile for using this app.</string>
+
+</resources>
